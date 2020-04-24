@@ -1,0 +1,13 @@
+# Begin default subdomain redirect #
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^spaceeinfo.tk
+RewriteRule ^(.*)$ http://www.spaceeinfo.tk/$1 [R=permanent,L]
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+# End default subdomain redirect
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
